@@ -7,6 +7,11 @@ variable subnet4 {}
 variable account_id {}
 variable automation_role {}
 variable namespace_1 {}
+variable spot_io_auth_token {}
+variable spot_io_barier {}
+variable route53_account {}
+
+
 
 variable "efs_storage_class" {
   description = "If set to true, enable"
