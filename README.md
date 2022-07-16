@@ -8,7 +8,6 @@ Requirements
 - AWS Account ID
 - VPC ID
 - 2 Subnets IDs (4 optional)
-- Namespaces (Up to 3 Optional)
 - Automation IAM Role for EC2
 - SPOT.IO Account and Auth Token
 - Route53 access to add CNAME (IAM Role and Policy required)
