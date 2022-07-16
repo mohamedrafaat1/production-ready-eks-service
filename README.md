@@ -1,11 +1,7 @@
-[![Plan_only](https://github.com/nice-global-devops/eks_service/actions/workflows/Plan_only.yaml/badge.svg)](https://github.com/nice-global-devops/eks_service/actions/workflows/Plan_only.yaml) [![Deploy](https://github.com/nice-global-devops/eks_service/actions/workflows/Deploy.yml/badge.svg)](https://github.com/nice-global-devops/eks_service/actions/workflows/Deploy.yml) 
-
-# eks_service
+# production ready EKS cluster with Spot Ocean cluster
 
 Full functioning EKS with Spot Ocean Cluster deployemnt 0-touch deployment in 17min
 modulated for Github Actions
-
-latest stable release: [https://github.com/nice-global-devops/eks_service/releases/tag/v5.0-release](https://github.com/nice-global-devops/eks_service/releases/tag/v5.0-release)
 
 Requirements
 -
@@ -13,11 +9,12 @@ Requirements
 - VPC ID
 - 2 Subnets IDs (4 optional)
 - Namespaces (Up to 3 Optional)
-- Automation IAM Role (Optional)
+- Automation IAM Role for EC2
+- SPOT.IO Account and Auth Token
 
 Whats inside
 -
-- 2 Nodes (1 EC2 on-demand, 1 EC2 Spot node)
+- 2 Nodes (1 EC2 on-demand, 1 EC2 spot node)
 - Grafana Pod
 - Prometheus Pod
 - Spot Ocean controller Pod
