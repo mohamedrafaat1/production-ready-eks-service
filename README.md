@@ -11,6 +11,7 @@ Requirements
 - Namespaces (Up to 3 Optional)
 - Automation IAM Role for EC2
 - SPOT.IO Account and Auth Token
+- Route53 access to add CNAME (IAM Role and Policy required)
 
 Whats inside
 -
@@ -32,7 +33,7 @@ Whats inside
 
 ### Known Limitations
  - Grafana ELB may fail if no free Elastic-IP avalible. This is a blocker from AWS (5 EIP). Contact support to extend EIP at each account level.
- - Windows Nodes: https://tlvconfluence01.nice.com/display/PPC/EKS+Technical+data#EKSTechnicaldata-Considerations.1
+ - Windows Node, refer to AWS docs.
 
 ## Infracost intergration
 - Now you are able to estimate your EKS cluster cost<br> 
