@@ -64,9 +64,9 @@ module "eks" {
       }
     }
     green = {
-      min_size     = 0
+      min_size     = 1
       max_size     = 10
-      desired_size = 0
+      desired_size = 1
 
       //nable_bootstrap_user_data = true
 
