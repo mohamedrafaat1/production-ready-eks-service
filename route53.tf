@@ -17,15 +17,16 @@ output "elb_url" {
   value       = trimspace(data.local_file.elb_file.content)
 }
 
-#switch to account where you need DNS resolve for grafana
+#switch to account where you need DNS resolve for grafana\
+#MAKE SURE TO CREATE IAM ROLE AND POLICY FOR ROUTE53 ACCESS
 
 provider "aws" {
   alias   = "dns"
   region = "us-east-1"
   assume_role {
-    role_arn     = "arn:aws:iam::${account-with-route53}:role/route53-eks-access"
+    role_arn     = "arn:aws:iam::${var.route53_account}:role/route53-eks-access"
     session_name = "transit"
-    external_id  = "{account-with-route53}"
+    external_id  = "${var.route53_account}"
   }
 }
 
