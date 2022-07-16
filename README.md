@@ -15,7 +15,7 @@ Requirements
 
 Whats inside
 -
-- 2 Nodes (1 EC2 on-demand, 1 EC2 spot node)
+- 3 Nodes: 2 EC2 on-demand (blue-green) and 1 EC2 spot cluster node
 - Blue-Green Deployment
 - Grafana Pod
 - Prometheus Pod
