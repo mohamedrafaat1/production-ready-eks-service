@@ -11,6 +11,7 @@ Requirements
 - Automation IAM Role for EC2
 - SPOT.IO Account and Auth Token
 - Route53 access to add CNAME (IAM Role and Policy required)
+- S3 buket for terraform state files (*check backend.tf)
 
 Whats inside
 -
