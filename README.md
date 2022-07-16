@@ -1,4 +1,4 @@
-# production ready EKS cluster with Spot Ocean cluster
+# Production ready EKS cluster with Spot Ocean cluster
 
 Full functioning EKS with Spot Ocean Cluster deployemnt 0-touch deployment in 17min
 modulated for Github Actions
