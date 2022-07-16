@@ -30,6 +30,7 @@ Whats inside
 - Selective Tagging up to 6 tags of your choice (key=value)
 - EFS (NFS) Selective storage class creation
 - Resource name randomizer
+- Grafana Internal Load-Balancer (*remove Grafana pod annotations if external needed)
 
 ### Known Limitations
  - Grafana ELB may fail if no free Elastic-IP avalible. This is a blocker from AWS (5 EIP). Contact support to extend EIP at each account level.
