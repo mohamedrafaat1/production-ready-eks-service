@@ -36,7 +36,8 @@ Whats inside
  - Windows Node, refer to AWS docs.
 
 ## Infracost intergration
-- Now you are able to estimate your EKS cluster cost<br> 
+- You are able to estimate your EKS cluster cost<br> 
+- Use Infacost for Github Actions: https://github.com/marketplace/actions/infracost-actions<br>
   Create pull request, wait to comment with cost results to appear than close the pull request.
 
 
