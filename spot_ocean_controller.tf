@@ -2,7 +2,7 @@
 resource "null_resource" "spot_account" {
 
   provisioner "local-exec" {
-    command = "curl https://api.spotinst.io/setup/account?cloudAccountId=${var.account_id} -H \"Accept: application/json\" -H \"Authorization: Bearer <spot.io auth token>\" | jq -r '.response.items[0].accountId' > spot_${var.account_id}.json"
+    command = "curl https://api.spotinst.io/setup/account?cloudAccountId=${var.account_id} -H \"Accept: application/json\" -H \"Authorization: Bearer "$var.spot_io_barier}"\" | jq -r '.response.items[0].accountId' > spot_${var.account_id}.json"
   }
 }
 
@@ -13,7 +13,7 @@ data "local_file" "spot_file" {
 
 
 provider "spotinst" {
-   token   = "<spot.io token>"
+   token   = "${var.spot_io_auth_token}"
    account = trimspace(data.local_file.spot_file.content)
 }
 
@@ -21,7 +21,7 @@ module "ocean-controller" {
   source = "spotinst/ocean-controller/spotinst"
 
   # Credentials.
-  spotinst_token   = "<spot.io token>"
+  spotinst_token   = "${var.spot_io_auth_token}"
   spotinst_account = trimspace(data.local_file.spot_file.content) 
 
   # Configuration.
