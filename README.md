@@ -1,7 +1,9 @@
 # Production ready EKS cluster with Spot Ocean cluster
 
 Full functioning EKS with Spot Ocean Cluster, 0-touch deployment in 17min
-(modulated for Github Actions, tested on Jenkins and Actions)
+(modulated for Github Actions, tested on Jenkins and Actions).<br>
+This deployment can include ontap-FSx file system and storage class:
+https://github.com/gfrid/ontap_fsx
 
 Requirements
 -
